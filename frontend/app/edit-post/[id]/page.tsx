@@ -58,7 +58,6 @@ const EditPost = () => {
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setTitle(e.target.value)
           }
-          value={title}
         />
         <label className={styles.label}>本文</label>
         <textarea
@@ -67,7 +66,6 @@ const EditPost = () => {
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
             setContent(e.target.value)
           }
-          value={content}
         />
         <button type="submit" className={styles.button}>
           編集を保存
